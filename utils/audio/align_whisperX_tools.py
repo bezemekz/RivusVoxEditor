@@ -28,7 +28,7 @@ def whisperX_TextGrid(ph,wav,audio_sample_rate,processor,align_model,device):
     #print(wav)
     #whisper_inference_time_start=time.time()
     with torch.no_grad():
-        whisper_out = whisperx.align(phone_transcript, align_model, metadata, wav, device, return_char_alignments=True)
+        whisper_out = whisperx.align(transcript=phone_transcript, model=align_model, align_model_metadata=metadata, audio=wav, device=device, return_char_alignments=True,preprocess=False)
 
 
     
