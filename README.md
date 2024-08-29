@@ -1,7 +1,7 @@
 # RivusVoxEditor
 RivusVox Editor: the world's first near-live zero-shot adaptive speech editing system
 
-![](./rivusvox.png)
+![](https://github.com/user-attachments/assets/c913fa06-2974-4535-9dba-e31b20141155)
 
 By Zack Bezemek and Francesca Balestrieri.
 
@@ -22,7 +22,7 @@ Our model currently only works for speech in English (and, in particular, the be
 
 We took as our base model the (non-stutter-prediction components of the) *FluentSpeech* model developed by Ziyue Jiang, Qian Yang, Jialong Zuo, Zhenhui Ye, Rongjie Huang, Yi Ren, and Zhou Zhao, which is a automatic speech editing architecture using a context-aware diffusion models to iteratively refine the edited mel-spectrograms conditional on context features. For a thorough description of how *FluentSpeech* works, we refer to the corresponding [arXiv paper](https://arxiv.org/abs/2305.13612) and [github repository](https://github.com/Zain-Jiang/Speech-Editing-Toolkit). The architecture of *FluentSpeech* is the following (see [https://arxiv.org/abs/2305.13612](https://arxiv.org/abs/2305.13612)); for our base model, we ignore the stutter prediction components.
 
-![](./fluentspeecharch.png)
+![](https://github.com/user-attachments/assets/35cd4b70-128a-4db7-a171-a5042240c6f9)
 
 We made the following modifications to the base model:
 
