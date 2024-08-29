@@ -3,7 +3,7 @@ RivusVox Editor: the world's first near-live zero-shot adaptive speech editing s
 
 ![](./rivusvox.png)
 
-Authors: Zack Bezemek and Francesca Balestrieri
+By Zack Bezemek and Francesca Balestrieri.
 
 ## 0. Project description
 
