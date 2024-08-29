@@ -170,8 +170,8 @@ After fine-tuning AdaSpeech-style, we also performed an ablation study by revert
 - p: pitch predictor layer normalisations
 - s: utterance-level speaker embed linear layer
 - i: speaker id weight
-  
-![image](./ablft.png)
+
+![](https://github.com/user-attachments/assets/a6455c2b-25f6-4b13-a398-a73fc2c417e9)
 
 You can run our naive fine-tuning method on your processed dataset via: 
 
@@ -252,7 +252,7 @@ it should be set to 0 if the video source is the user's cam.
 
 #### **How to use the GUI**
 
-![](./gui.png)
+![](https://github.com/user-attachments/assets/584a5d02-b69a-4848-88e5-9bbff7617d68)
 
 - The toggle button  `Pause (background) loops`/ `Resum (background) loops` functionally doesn't do anything here (it is used in the GUI for editing audio while looping -- see a previous section).
 - In order to add or remove new words to be flagged and edited, the user can push the `Add Row` button and enter the new values. Pushing the `Remove Row` button will remove the last row. In order to update the dictionary, the user then needs to push the `Update Dictionary` button. Leaving both the entries of a row empty has functionally the same effect of removing that row (once the dictionary gets updated).
