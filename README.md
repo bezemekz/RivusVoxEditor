@@ -274,6 +274,8 @@ it should be set to 0 if the video source is the user's cam.
 
 #### **Requirements to run our model**
 
+WARNING: USE python version <=3.11 to avoid issues with torchaudio.
+
 The first step is to install the [cuda toolkit](https://developer.nvidia.com/cuda-downloads) if you have a cuda-enabled gpu. 
 
 Then you should install [pytorch](https://pytorch.org/get-started/locally/) depending on the cuda version you have.
@@ -282,7 +284,7 @@ Following this step, the necessary packages and their versions can be found in `
 ```
 pip install -r requirements.txt
 ```
- once the repository is cloned and pulled. In addition, you will need to download config.yaml and xxx.ckpt from the `Pretrained Checkpoint` section and model_ckpt_steps_2168000.ckpt and config.yaml from the `Download the pre-trained vocoder` section from the `Tips` section in FluentSpeech's [github repository](https://github.com/Zain-Jiang/Speech-Editing-Toolkit). The pretrained checkpoint from their model should go in checkpoints/spec_denoiser and the vocoder in pretrained/higan_hifitts.
+ once the repository is cloned and pulled. In addition, you will need to download config.yaml and xxx.ckpt from the `Pretrained Checkpoint` section, model_ckpt_steps_2168000.ckpt and config.yaml from the `Download the pre-trained vocoder` section, and phone_set.json,word_set.json from the `Tips` section in FluentSpeech's [github repository](https://github.com/Zain-Jiang/Speech-Editing-Toolkit). The pretrained checkpoint from their model should go in checkpoints/spec_denoiser, the vocoder in pretrained/higan_hifitts, and phone_set.json,word_set.json in data/processed/binary/libritts. 
 
  You will then need to download [ESpeakNG](https://github.com/espeak-ng/espeak-ng/blob/master/docs/guide.md#installation). 
 
@@ -293,7 +295,7 @@ pip install -r requirements.txt
 
 #### **Requirements to run the live streaming speech editing demo**
 
-In order to run the live streaming speech editing demo streaming_proof_of_concept.ipynb, you need to have installed both all the requirements for our model (see the previous section) and the packages that can be found in `requirements_streaming.txt`. You will want to make sure you are using a cuda-enabled GPU (test this by running torch.cuda.is_available()). Moreover, you will need to make sure that ffmpeg is installed in your local machine and that the path to the `ffmpeg.exe` file is added to the system PATH environment variable. In order to use the Rubber Band Library, you will also need to install the [Rubber Band command-line utility](https://breakfastquay.com/rubberband/) and add the path to the folder containing the `rubberband.exe` and the `sndfile.dll` files to the system PATH environment variable.
+In order to run the live streaming speech editing demo streaming_proof_of_concept.ipynb, you need to have installed both all the requirements for our model (see the previous section) and the packages that can be found in `requirements_streaming.txt`. You will want to make sure you are using a cuda-enabled GPU (test this by running torch.cuda.is_available()). Moreover, you will need to make sure that ffmpeg (version <=6) is installed in your local machine and that the path to the `ffmpeg.exe` file is added to the system PATH environment variable. In order to use the Rubber Band Library, you will also need to install the [Rubber Band command-line utility](https://breakfastquay.com/rubberband/) and add the path to the folder containing the `rubberband.exe` and the `sndfile.dll` files to the system PATH environment variable.
 
 If necessary, modify the Espeak_dll_directory and model checkpoint directories in the `User input and hyperparameters` section of the notebook as in speech_edit_inference.ipynb. 
 

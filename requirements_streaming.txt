@@ -1,11 +1,9 @@
 yt-dlp
 ffmpeg-python
 pyaudio
-tkinter
-PIL
 colorama
-cv2
-pyrubberband
+pydub
+accelerate
 
 
 
