@@ -282,7 +282,7 @@ Following this step, the necessary packages and their versions can be found in `
 ```
 pip install -r requirements.txt
 ```
- once the repository is cloned and pulled. In addition, you will need to download config.yaml and xxx.ckpt from the `Pretrained Checkpoint` section, model_ckpt_steps_2168000.ckpt and config.yaml from the `Download the pre-trained vocoder` section, and phone_set.json,word_set.json from the `Tips` section in FluentSpeech's [github repository](https://github.com/Zain-Jiang/Speech-Editing-Toolkit). The pretrained checkpoint from their model should go in checkpoints/spec_denoiser, the vocoder in pretrained/higan_hifitts, and phone_set.json,word_set.json in data/processed/binary/libritts. 
+ once the repository is cloned and pulled. In addition, you will need to download config.yaml and xxx.ckpt from the `Pretrained Checkpoint` section and model_ckpt_steps_2168000.ckpt and config.yaml from the `Download the pre-trained vocoder` section from the `Tips` section in FluentSpeech's [github repository](https://github.com/Zain-Jiang/Speech-Editing-Toolkit). The pretrained checkpoint from their model should go in checkpoints/spec_denoiser and the vocoder in pretrained/higan_hifitts.
 
  You will then need to download [ESpeakNG](https://github.com/espeak-ng/espeak-ng/blob/master/docs/guide.md#installation). 
 
