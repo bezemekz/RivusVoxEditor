@@ -1,7 +1,6 @@
 yt-dlp
 ffmpeg-python
 pyaudio
-colorama
 pydub
 accelerate
 opencv-python
