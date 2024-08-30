@@ -274,7 +274,7 @@ it should be set to 0 if the video source is the user's cam.
 
 #### **Requirements to run our model**
 
-WARNING: USE python version <=3.11 to avoid issues with torchaudio.
+If you intend on running our livestreaming notebook, it is probably easiest to set up a dedicated conda environment.
 
 The first step is to install the [cuda toolkit](https://developer.nvidia.com/cuda-downloads) if you have a cuda-enabled gpu. 
 
@@ -295,7 +295,7 @@ pip install -r requirements.txt
 
 #### **Requirements to run the live streaming speech editing demo**
 
-In order to run the live streaming speech editing demo streaming_proof_of_concept.ipynb, you need to have installed both all the requirements for our model (see the previous section) and the packages that can be found in `requirements_streaming.txt`. You will want to make sure you are using a cuda-enabled GPU (test this by running torch.cuda.is_available()). Moreover, you will need to make sure that ffmpeg (version <=6) is installed in your local machine and that the path to the `ffmpeg.exe` file is added to the system PATH environment variable. In order to use the Rubber Band Library, you will also need to install the [Rubber Band command-line utility](https://breakfastquay.com/rubberband/) and add the path to the folder containing the `rubberband.exe` and the `sndfile.dll` files to the system PATH environment variable.
+In order to run the live streaming speech editing demo streaming_proof_of_concept.ipynb, you need to have installed both all the requirements for our model (see the previous section) and the packages that can be found in `requirements_streaming.txt`. You will want to make sure you are using a cuda-enabled GPU (test this by running torch.cuda.is_available()). Moreover, you will need to make sure that ffmpeg (version <=6) is installed in your local machine and that the path to the `ffmpeg.exe` file is added to the system PATH environment variable. This is somewhat fussy, and the most reliable way we found was to run `conda install -c conda-forge 'ffmpeg=6.1'' in a dedicated virtual environment. In order to use the rubber banding feature, you will also need to install the [Rubber Band command-line utility](https://breakfastquay.com/rubberband/) and add the path to the folder containing the `rubberband.exe` and the `sndfile.dll` files to the system PATH environment variable. Lastly, to install pyrubberband, the python wrapper for this library, you can not use pip with newer versions of python. Instead, you can download [this folder](https://github.com/bmcfee/pyrubberband/tree/master/pyrubberband) and place it in your python environment at Lib/site-packages.
 
 If necessary, modify the Espeak_dll_directory and model checkpoint directories in the `User input and hyperparameters` section of the notebook as in speech_edit_inference.ipynb. 
 
