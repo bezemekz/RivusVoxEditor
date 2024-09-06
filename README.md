@@ -5,6 +5,10 @@ RivusVox Editor: the world's first near-live zero-shot adaptive speech editing s
 
 By Zack Bezemek and Francesca Balestrieri.
 
+TLDR: View the demo here:
+
+[<img src="https://github.com/user-attachments/assets/8f342326-546a-49bd-a1aa-ffc98b589ca8">](https://www.youtube.com/watch?v=k9yhQQq4Tew)
+
 ## 0. Project description
 
 The main goal behind our project was to be able to edit speech on the fly, by removing key words and replacing them with other words with a generated voice as similar to the speaker's voice as possible, all while having no prior knowledge about the speaker. A possible concrete application we had in mind is live streaming: streamers usually stream with some delay, and they might find useful to exploit that delay to automatically edit any slip-ups on the go, or edit key words for entertainment purposes.  
